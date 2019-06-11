@@ -85,8 +85,7 @@ Default k value is taken as 25 and actual rating above 3.5 is taken as relevant 
 **Spearman rank correlation**
 The rank of the predictions are calculated for every user and subtracted with actual rank of the predicted movie from test dataset and squared. This value is then substituted in the formula to get the correlation. It is always less than 1.
 
-**Time**
-It was calculated after loading matrix into RAM till output is printed.
+**Time** was calculated after loading matrix into RAM, up till output is printed.
 
 ## Observations
 Recommender System Model | RMSE | Precision on top k | Spearman Rank Correlation | Time taken for prediction
@@ -97,3 +96,7 @@ SVD | 0 | 1 | 1 | 81s
 SVD + 90% energy retained | 0.9928 | 0.96 | 0.992 | 53s
 CUR | 0.992 | 0.94 | 0.99 | 42s
 CUR + 90% energy retained | 0.9939 | 0.96 | 0.991 | 33s
+
+---
+
+_This implementation of recommender systems was a course project in the Information Retrieval course at BITS Pilani, Hyderabad Campus. This project was completed in collaboration with [Monith Sourya](https://github.com/monith-sourya), [Sanjay Devprasad](https://github.com/Sanjay-D), and [Vishnu Teja](https://github.com/vishnteja)._
